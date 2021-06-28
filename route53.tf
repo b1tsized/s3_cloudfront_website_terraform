@@ -1,11 +1,11 @@
 # If you already have a Route53 Zone change 'resource' to 'data' and you'll need to update any reference to data.aws_route53_zone.main
-resource "aws_route53_zone" "main" {
+resource "aws_route53_zone" "bucket_domain" {
   name = var.domain_name
 }
 
 # If you are using `data` rather than `resource` update `zone_id` to have data. in the front
 resource "aws_route53_record" "root-a" {
-  zone_id = aws_route53_zone.main.zone_id
+  zone_id = aws_route53_zone.bucket_domain.zone_id
   name    = var.domain_name
   type    = "A"
 
@@ -18,7 +18,7 @@ resource "aws_route53_record" "root-a" {
 
 # If you are using `data` rather than `resource` update `zone_id` to have data. in the front
 resource "aws_route53_record" "www-a" {
-  zone_id = aws_route53_zone.main.zone_id
+  zone_id = aws_route53_zone.bucket_domain.zone_id
   name    = "www.${var.domain_name}"
   type    = "A"
 

@@ -9,7 +9,7 @@
 
 [My Terraform playlist on Youtube](https://youtube.com/playlist?list=PLGWu201K4_lgCRK-SxW_EpvOc8GLY77U3)
 
-## Why I made this? 
+## Why I made this?
 
 I made this Terraform to help others upload their simple websites to S3 using Cloudfront to distribute it. This will make a secure site that uses HTTPS and can allow you to connect anything into Lambda or other services. This is great for a small simple site to use for a blog, portfolio, or resume. I use this for my personal site and it is around 3 USD a month to run. This is much cheaper than most providers and is completely serverless and allows you to focus on your site itself. If you need any server side coding I would suggest using Lambda with the API service.
 
@@ -53,7 +53,7 @@ The `root_bucket` is strictly used to redirect to the `www_bucket`. I've also ma
 
 ## If you already have a Route53 Domain Zone.
 
-If you already have a Route53 domain registered with zones you'll need to update all of the references to `aws_route53_zone.main` to `data.aws_route53_zone.main`. 
+If you already have a Route53 domain registered with zones you'll need to update all of the references to `aws_route53_zone.bucket_domain` to `data.aws_route53_zone.bucket_domain`. 
 
 I've made notes in both the `route53.tf` and `acm.tf` files.
 
