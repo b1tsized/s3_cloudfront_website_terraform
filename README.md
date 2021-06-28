@@ -5,6 +5,10 @@
   * [Terraform Downloaded and Installed](https://www.terraform.io/downloads.html)
   * DNS managed domain in Route53
 
+## Learn about Terraform
+
+[My Terraform playlist on Youtube](https://youtube.com/playlist?list=PLGWu201K4_lgCRK-SxW_EpvOc8GLY77U3)
+
 ## Why I made this? 
 
 I made this Terraform to help others upload their simple websites to S3 using Cloudfront to distribute it. This will make a secure site that uses HTTPS and can allow you to connect anything into Lambda or other services. This is great for a small simple site to use for a blog, portfolio, or resume. I use this for my personal site and it is around 3 USD a month to run. This is much cheaper than most providers and is completely serverless and allows you to focus on your site itself. If you need any server side coding I would suggest using Lambda with the API service.
