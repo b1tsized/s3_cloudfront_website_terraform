@@ -3,6 +3,7 @@
 ### Pre-req:
 
   * [Terraform Downloaded and Installed](https://www.terraform.io/downloads.html)
+  * DNS managed domain in Route53
 
 ## Why I made this? 
 
@@ -41,6 +42,10 @@ The `root_bucket` is strictly used to redirect to the `www_bucket`. I've also ma
 8. Apply your changes.
 
     `terraform apply`
+
+9. Type `yes` to confirm changes.
+
+10. Wait for it to complete may take around 30 minutes with domain verification.
 
 ## If you already have a Route53 Domain Zone.
 
