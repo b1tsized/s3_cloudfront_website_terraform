@@ -49,7 +49,7 @@ The `root_bucket` is strictly used to redirect to the `www_bucket`. I've also ma
 
 ## If you already have a Route53 Domain Zone.
 
-If you already have a Route53 domain registered with zones you'll need to update all of the references to `resource.aws_route53_zone`. 
+If you already have a Route53 domain registered with zones you'll need to update all of the references to `aws_route53_zone.main` to `data.aws_route53_zone.main`. 
 
 I've made notes in both the `route53.tf` and `acm.tf` files.
 
