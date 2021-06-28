@@ -16,15 +16,15 @@ The `root_bucket` is strictly used to redirect to the `www_bucket`. I've also ma
 
 1. Download this repo locally.
 
-  `git clone https://github.com/b1tsized/s3_cloudfront_website_terraform.git`
+    `git clone https://github.com/b1tsized/s3_cloudfront_website_terraform.git`
 
 2. Navigate to the folder you just downloaded.
 
-  `cd ./s3_cloudfront_website_terraform/`
+    `cd ./s3_cloudfront_website_terraform/`
 
 3. Initialize the directory in Terraform.
 
-  `terraform init`
+    `terraform init`
 
 4. Update your variables in the `terraform.tfvars` file. If you need to use your AWS Access Key and Secret Key make sure to uncomment it in the `variables.tf`, `terraform.tfvars`, and `providers.tf`.
 
@@ -32,15 +32,15 @@ The `root_bucket` is strictly used to redirect to the `www_bucket`. I've also ma
 
 6. Check that everything is valid.
 
-  `terraform validate`
+    `terraform validate`
 
 7. Run your plan to verify all changes in AWS.
 
-  `terraform plan`
+    `terraform plan`
 
 8. Apply your changes.
 
-  `terraform apply`
+    `terraform apply`
 
 ## If you already have a Route53 Domain Zone.
 
